@@ -54,3 +54,8 @@ h3.dates {
 .green{color: #619647;}
 
 .purple{color: #9876AA;}
+
+img{
+    max-width: 35%;
+    height: auto
+}
