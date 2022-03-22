@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2749575b-01e8-4463-99f1-a5a3cad424b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ModalBlog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cv.html" beforeDir="false" afterPath="$PROJECT_DIR$/cv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +73,8 @@
       <workItem from="1646022257159" duration="33000" />
       <workItem from="1646022624677" duration="591000" />
       <workItem from="1647045211706" duration="4322000" />
-      <workItem from="1647725349483" duration="11271000" />
+      <workItem from="1647725349483" duration="11404000" />
+      <workItem from="1647962699535" duration="4658000" />
     </task>
     <servers />
   </component>

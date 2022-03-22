@@ -4,16 +4,123 @@
     <title>Stephanie Cristea's Personal Page</title>
     <!-- link to main stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="ModalBlog.js"></script>
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="blog.html">Blog</a></li>
-    </ul>
-</nav>
+
+<div style="margin-left: -165px">
+    <div style="border:1px solid #2B2B2B; height:156px; width:293px; background-color:#2B2B2B; border-radius: 5px">
+        <div style="font-size:10px; font-family:'Courier New'">
+            <p style="margin:0; margin-top:6px"> <span class="orange">def</span> <span class="yellow">StephsWebsite</span> <span class="white">():</span></p>
+            <p style="margin:0; margin-left:25px"> <span class="orange">while</span> <span class="white">visiting ==</span> <span class="orange">True</span> <span class="white">:</span></p>
+            <p style="margin:0; margin-left:50px"> <a class="white" href="index.html">visit_home()</a></p>
+            <p style="margin:0; margin-left:50px"> <a class="white" href="cv.html">visit_cv()</a></p>
+            <p style="margin:0; margin-left:50px"> <a class="white" href="blog.html">visit_blog()</a></p>
+            <p style="margin:0; margin-left:25px"> <span class="purple">print</span> <span class="white">(</span> <span class="green">"Goodbye, </span> </p>
+            <p style="margin:0; margin-left:110px"> <span class="green">come again soon!"</span><span class="white">)</span></p>
+        </div>
+    </div>
+</div>
+
+<div style = "margin-top: -230px; margin-left: 200px;">
+    <h1 style="text-align: center;">Blog</h1>
+    <button id="btn1" class="btnBlog1" style="font-family:'Lucinda Console'; font-size: 28px"> The Power of Shiny for Toronto Auto Theft Data</button>
+
+    <div id="modal1" class="modal" >
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="text-align: center">The Power of Shiny for Toronto Auto Theft Data</h2>
+            <p> It was during another procrastination session on Reddit when I stumbled upon a post created by someone in the R programming subreddit asking for help programming a Shiny App.
+                <br>
+                Having never heard of Shiny, it sparked a flurry of google searches and tutorial binge watches and before I knew it, I was committing all my time to create interactive web applications.
+                <br>
+                Shiny is an open package created by RStudio for programmers to create interactive web applications. It requires no previous HTML, CSS or JavaScript background and provides advanced analytics to visualize even complex data in 3D plots and maps.
+                <br>
+                Using public data provided by the Toronto Police Service, I have created a visualizer for Toronto Auto Thefts between the years 2014 and 2018.
+                <br>
+                Inspired by the final project I worked on for my statistics course, I wanted to focus on demonstrating the evolution of the number of auto thefts depending on time. Our analyses showed that there was strong evidence to support a significant difference between thefts during the day vs during the night, but we also analyzed differences between months, all of which I wanted to include in the visualization.
+                <br>
+                <a href="https://stephanie-cristea.shinyapps.io/toronto_auto_theft_interactive/">With that being said, the interactive app can be found at this link.</a>
+                <br>
+                Unfortunately, one of Shiny's disadvantages is the restriction of traffic in the free version. If the link above is not working, the max number of hours accredited per month has been reached. If that is the case, a demonstration of the app can be found below, and if you wish to recreate the app yourself, <a href="https://github.com/StephanieCristea/Interactive-Toronto-Auto-Theft-">the code and data set can be found at my GitHub.</a>
+            </p>
+            <div style="text-align: center">
+            <img src="AutoTheftBlogPics/Pic1.png" alt="Screenshot of Website">
+            </div>
+            <p>After choosing which month(s), year(s), and area(s), the plots update and the map zooms into the relevant area:</p>
+            <div style="text-align: center">
+            <img src="AutoTheftBlogPics/Pic2.png" alt="Screenshot of Website after Selections">
+            </div>
+            <p>The bar graph updates based on which areas of Toronto are selected. The Month and Year indicator bear no effect on the bar graph, while both being necessary for the map.
+                <br>
+                Another example:</p>
+            <div style="text-align: center">
+            <img src="AutoTheftBlogPics/Pic3.png" alt="Another Screenshot of Website after Selection">
+            </div>
+            <h3>Discussion</h3>
+            <p>Shiny is a powerful tool for visualization. Further analysis would have to be conducted to discover any meaningful correlations between neighborhood(s) and/or month(s) for the number of auto thefts, however, using a visualizer such as this one would be an excellent way to develop possible hypotheses. These could, later on, be used to determine when and where police should be situated to prevent and minimize the number of auto thefts.
+                <br>
+                In addition, other factors may also need to be considered, however for my purposes, I have only included three factors.
+                <br>
+                I highly encourage anyone looking into developing their statistical and data science background to learn to program not only in R, but to also program in R with Shiny. </p>
+        </div>
+    </div>
+<p class="BlogDate">Jan 3 2020</p>
+<!--    </div>-->
+
+<!--    <button id="btn2" class="btn2">Undergraduate Research Assistant, IAI Lab <br> Jun 2020 - Jul 2021 | 1y2mos</button>-->
+
+<!--    <div id="modal2" class="modal" >-->
+<!--        <div class="modal-content">-->
+<!--            <span class="close">&times;</span>-->
+<!--            <ul>-->
+<!--                <li> Creating research hypotheses and building experiments to study said hypothesis.</li>-->
+<!--                <li> Analyzing collected data in Python (libraries: Pandas, Numpy) and R (Tidyverse, Shiny, Leaflet) to test hypotheses using A/B comparisons and creating appropriate visuals to demonstrate the data.</li>-->
+<!--                <li> Assisting with paper writing (currently working to submit a paper to the L@S Conference)</li>-->
+<!--                <li> Managing research teams to meet paper deadlines and facilitating meetings</li>-->
+<!--                <li> Acting as a liaison between our team and our lab manager.</li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <button id="btn3" class="btn3">Assistant Data Scientist, CryptoGateways <br> Jul 2019 - Sep 2019 | 3mos</button>-->
+
+<!--    <div id="modal3" class="modal" >-->
+<!--        <div class="modal-content">-->
+<!--            <span class="close">&times;</span>-->
+<!--            <ul>-->
+<!--                <li> Worked with supervisors and data analysts to review and ensure all aspects of data quality including completeness, standardization, and accuracy. </li>-->
+<!--                <li> Provided recommendations on data elements, developed reports for stakeholders and maintained and updated the data dictionary for cryptocurrencies.</li>-->
+<!--                <li> Updated and maintained company website. </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div style = "margin-top: -363px; margin-left:700px; width: 377px">-->
+<!--    <h1 style="text-align: center;">Projects</h1>-->
+
+<!--    <button id="btn4" class="btn4"> L@S '21 Publication <br> Jun 2021</button>-->
+<!--    <div id="modal5" class="modal" >-->
+<!--        <div class="modal-content">-->
+<!--            <span class="close">&times;</span>-->
+<!--            <a href="https://dl.acm.org/doi/10.1145/3430895.3460145" style="text-align: center">Exploring Additional Personalized Support While Attempting Exercise Problems in Online Learning Platforms</a>-->
+<!--            <p>In online asynchronous learning environments, students are assigned exercises, but it is not clear how to incorporate the kinds of actions an in-person tutor might take such as explaining, providing more practice, prompting for reflection, and motivating. We explore approaches to adding "Drop-Downs'' that appear after a student submits an answer and that contain additional information to support learning. We conducted randomized A/B experiments exploring the impact of these Drop-Downs on student learning in the online portion of a flipped CS1 course. The deployed Drop-Downs in this course provided explanations, reflective prompts, additional problems, and motivational messages. The results suggest that students benefit from various Drop-Downs in different contexts, indicating the possibility of personalizing content based on the student's state. We discuss the resulting design implications of Drop-Downs in online learning systems.</p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <button id="btn5" class="btn5"> Interactive Toronto Auto Theft Map <br> Nov 2019</button>-->
+<!--    <div id="modal4" class="modal" >-->
+<!--        <div class="modal-content">-->
+<!--            <span class="close">&times;</span>-->
+<!--            <p> An app for an interactive visualizer for Toronto auto thefts using R and the packages Shiny and Leaflet. Users have the option to filter Toronto auto thefts by month, year, and neighborhood to view the density of thefts on a map. Information is also displayed in a bar graph showing the number of theft occurrences per year, and changes based on which neighborhoods have been selected.</p>-->
+<!--            <p>The inspiration for this project came from a statistics course (view repository STA130), where we worked with this data to try to optimize when and where police could station their cars to minimize auto thefts.</p>-->
+<!--            <p>Data was pulled from the Toronto police site.</p>-->
+<!--            <p><a href="https://github.com/1cristeaste/Interactive-Auto-Thefts">GitHub</a></p>-->
+<!--            <p><a href="https://www.linkedin.com/pulse/power-shiny-toronto-auto-theft-data-stephanie-cristea/">LinkedIn Article</a></p>-->
+<!--        </div>-->
+<!--    </div>-->
+
 
 </body>
 </html>
